@@ -1,0 +1,17 @@
+.jumbotron {
+
+  background-image: url("https://lovelace-media.imgix.net/uploads/1442/5e109a00-3bad-0134-0b07-0629623c6db9.jpg?w=1600&amp;h=580&amp;auto=format&amp;q=70") ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 450px;
+}
+
+.jumbotron img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%
+}
