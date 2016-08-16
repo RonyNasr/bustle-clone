@@ -3,7 +3,8 @@
   background-image: url("https://lovelace-media.imgix.net/uploads/1442/5e109a00-3bad-0134-0b07-0629623c6db9.jpg?w=1600&amp;h=580&amp;auto=format&amp;q=70") ;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 450px;
+  height: 500px;
+  margin-bottom: 0;
 }
 
 .jumbotron img{
@@ -15,3 +16,79 @@
   width: 100%;
   max-width: 100%
 }
+
+.title{
+  font-family: 'BenchNine', sans-serif;
+  font-size:30px;
+}
+
+.line-arrow.left {
+    border-top: 2px solid #a9a9a9;
+    border-left: 2px solid #a9a9a9;
+    transform: rotate(-54deg) skew(-20deg);
+    left: 20px;
+}
+.line-arrow {
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+    cursor: pointer;
+}
+
+.line-arrow.right {
+    border-top: 2px solid #a9a9a9;
+    border-right: 2px solid #a9a9a9;
+    transform: rotate(54deg) skew(20deg);
+    right: 20px;
+}
+
+.fontwhite {
+  color: white;
+}
+
+.module1a {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(https://lovelace-media.imgix.net/getty/590126084.jpg?w=373&amp;h=280&amp;fit=crop&amp;crop=faces&amp;auto=format&amp;q=70);
+  background-size: cover;
+  width: 373px;
+  height: 280px;
+  margin: 10px 0 0 10px;
+  position: relative;
+  float: left;
+}
+
+.small {
+  color: white;
+  margin: 0;
+  font-size:10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: block;
+}
+
+.module1b {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(https://lovelace-media.imgix.net/getty/464153280.jpg?w=373&amp;h=280&amp;fit=crop&amp;crop=faces&amp;auto=format&amp;q=70);
+  background-size: cover;
+  width: 373px;
+  height: 280px;
+  margin: 10px 0 0 10px;
+  position: relative;
+  float: left;
+}
+
+
+1140 760

@@ -1,6 +1,5 @@
 <header class = "jumbotron jumbotron-fluid">
 </header>
-
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -11,7 +10,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {{#link-to 'index'}} <a class="navbar-brand">BUSTLE</a> {{/link-to}}
+      {{#link-to 'index'}} <a class="navbar-brand title">BUSTLE</a> {{/link-to}}
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -23,26 +22,35 @@
         <li>{{#link-to 'lifestyle'}} LIFESTYLE {{/link-to}}</li>
         <li>{{#link-to 'books'}} BOOKS {{/link-to}}</li>
         <li>{{#link-to 'explore'}} <span class="glyphicon glyphicon-search" aria-hidden="true"></span> EXPLORE {{/link-to}}</li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">ADVERTISE WITH US</a></li>
-            <li><a href="#">APPS</a></li>
-            <li><a href="#">LABS</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+        {{#bs-dropdown tagName="li"}}
+  {{#bs-dropdown-toggle}}ABOUT<span class="caret"></span>{{/bs-dropdown-toggle}}
+  {{#bs-dropdown-menu}}
+    <li>
+      <row>
+        <a id="facebook button" class="btn btn-xs btn-primary"><span class="fontwhite"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Like 1.2M</span></a>
+        <a id="follow-button" class="btn btn-xs btn-primary" title="Follow @bustle on Twitter" href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.bustle.com%2F&amp;ref_src=twsrc%5Etfw&amp;region=follow_link&amp;screen_name=bustle&amp;tw_p=followbutton"><i></i><span class="label" id="l"><i class="fa fa-twitter" aria-hidden="true"></i> Follow</span></a>
+      </row>
+    </li>
+    <li>{{#link-to "index"}}ABOUT US{{/link-to}}</li>
+    <li>{{#link-to "index"}}ADVERTISE WITH US{{/link-to}}</li>
+    <li>{{#link-to "index"}}APPS{{/link-to}}</li>
+    <li>{{#link-to "index"}}LABS{{/link-to}}</li>
+    <li>{{#link-to "index"}}TERMS{{/link-to}}</li>
+  {{/bs-dropdown-menu}}
+{{/bs-dropdown}}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
+<a id="follow-button" class="btn" title="Follow @bustle on Twitter" href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.bustle.com%2F&amp;ref_src=twsrc%5Etfw&amp;region=follow_link&amp;screen_name=bustle&amp;tw_p=followbutton"><i></i><span class="label" id="l">Follow</span></a>
 
 <div class="container">
     {{outlet}}
   <hr>
   <footer>
     {{#link-to 'contact'}}Our representatives would love to help!{{/link-to}}
+
   </footer>
 </div>
